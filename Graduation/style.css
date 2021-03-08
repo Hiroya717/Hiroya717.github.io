@@ -1,0 +1,48 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+header{
+
+padding: 10px 30px;
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+position: relative;
+height: 100vh;
+background-image: url(./image/Camelot\ Buck\ .JPG);
+background-size: cover;
+background-repeat: no-repeat;
+animation-name: change-image;
+animation-duration: 8s;
+
+}
+
+ /* @keyframes change-image {
+    to {
+        background-image:url(./image/2018\ Tomoya\ .JPG) ;
+    }
+} */
+
+.logo{
+    height: 38px;
+}
+
+.nav{
+    display: flex;
+}
+
+.nav > li > a {
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+
+}
+
+
