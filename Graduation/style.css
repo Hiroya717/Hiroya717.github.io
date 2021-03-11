@@ -1,70 +1,348 @@
-*{
-margin: 0;
-padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-
-header{
-padding: 40px 40px;
-display: flex;
-justify-content: space-between;
-position: relative;
-height: 100vh;
-background-image: url(./image/Camelot\ Buck\ .JPG);
-background-size: 100% auto;
-background-repeat: no-repeat;
+.bg {
+    background-image: url("./image/Camelot\ Buck\ .JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
-.logo{
-    height: 50px;
-    width: 250px;
+@keyframes img-wrap-before {
+    100% {
+      transform: translateY(100%);
+    }
+  }
+
+  @keyframes img-wrap-after {
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+      .bg:before,
+      .bg:after {
+        animation: 4s  cubic-bezier(.4, 0, .2, 1) forwards ;
+        background: #fff;
+        bottom: 0;
+        content: '';
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+      }
+
+      .bg:before {
+        animation-name: img-wrap-before;
+        left: 0;
+        right: 50%;
+      }
+
+      .bg:after {
+        animation-name: img-wrap-after;
+        left: 50%;
+        right: 0;
+      }
+
+
+
+header {
+    padding: 40px 40px;
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+    /* height: 100vh; */
+    /* background-image: url(./image/Camelot\ Buck\ .JPG); */
+    /* background-size: 100% auto; */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
 }
 
 .header-left {
-    display:  flex;
-    position:  relative;
-    animation: anime1 5s ease;
+    /* display:  flex; */
+    /* position:  relative; */
+    animation: anime1 10s ease ;
 }
 
-.header-right{
-    margin-left: 600px;
+.logo {
+    height: 50px;
+    /* width: 250px; */
+}
 
+@media screen and (max-width: 1000px) { /* 画面幅が100pxより小さくなったら */
+    .logo {
+        height: 30px;
+    }
+}
+
+.header-right {
+    /* margin-left: 600px; */
 }
 
 @keyframes anime1 {
     0% {
-        opacity:  0;
+        opacity: 0;
         top: 50px;
     }
     100% {
-        opacity:  1;
+        opacity: 1;
         top: 0;
     }
 }
-.nav{
+
+.nav {
     display: flex;
 }
 
-.nav > li > a {
-    color:white;
+.nav>li>a {
+    color: white;
     font-size: 30px;
     margin-left: 90px;
     text-decoration: none;
-    font-family: 'DIN Condensed',sans-serif;
+    font-family: 'DIN Condensed', sans-serif;
+}
+@media screen and (max-width: 1000px) { /* 画面幅が100pxより小さくなったら */
+    .nav>li>a {
+        font-size: 20px;
+    }
 }
 
-.sns{
-    position: relative;
-    animation: anime1 5s ease;
-}
-
+/*
+46行目に書いてるから不要
 @keyframes anime1 {
     0% {
-        opacity:  0;
+        opacity: 0;
         top: 50px;
     }
     100% {
-        opacity:  1;
+        opacity: 1;
         top: 0;
     }
+}
+*/
+
+/*
+36行目に移動
+@media screen and(min-width:576px) {
+    .logo {
+        size: 256px;
+    }
+}
+*/
+
+
+#profile{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 100px;
+
+}
+
+
+.name-logo{
+    width: 280px;
+    padding-top: 60px;
+}
+
+@media screen and (max-width: 1000px) { /* 画面幅が100pxより小さくなったら */
+    .name-logo{
+        width: 200px;
+    }
+}
+
+.profile{
+    font-family: 'DIN Condensed', sans-serif;
+    font-size: 40px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px;
+    padding-left: 100px;
+
+}
+.nine{
+    font-family: 'DIN Condensed', sans-serif;
+    padding-top: 80px;
+    margin-right: 80px;
+    font-family: 'DIN Condensed', sans-serif;
+    font-size: 20px;
+
+}
+.profile-image{
+    width: 400px;
+    margin-right: 130px;
+  }
+  @media screen and (max-width: 1000px) { /* 画面幅が100pxより小さくなったら */.profile-image{
+      height: 400px;
+      padding-top: 130px; }
+  }
+
+
+
+     #event {
+        font-family: 'DIN Condensed', sans-serif;
+        margin-top: 100px;
+        font-size: 20px;
+        height: 50vh;
+        background-image: url(./image/IMG_3906.JPG);
+        background-color: rgba(255, 255, 255, 0.8);
+        background-blend-mode: lighten;
+        /* 垂直方向中央、水平方向中央に位置指定 */
+        background-position: center center;
+        /* 画像をタイル状に繰り返し表示しない */
+        background-repeat: no-repeat;
+        /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+        background-attachment: fixed;
+        /* 表示する横幅の大きさに基づいて、背景画像を調整 */
+        background-size: cover;
+    }
+
+
+    @media screen and (max-width: 1000px) { /* 画面幅が100pxより小さくなったら */
+        .flyer{
+            height: 250px;
+            padding-top: 40px;
+          }
+
+    }
+
+
+.flyer{
+    width: 300px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+}
+
+
+  .event-contents{
+      padding-left: 20px;
+      padding-top: 20px;
+
+  }
+
+  .list{
+      display: flex;
+      padding-top: 30px;
+      padding-left: 30px;
+  }
+
+    .APRIL{
+        padding-left: 390px;
+
+
+    }
+    .kaisai-april{
+        padding-top: 140px;
+        font-size: 30px;
+
+    }
+
+#news{
+    display: flex;
+
+}
+.new-contents{
+    padding-top: 20px;
+    padding-left:20px;
+    font-family: 'DIN Condensed', sans-serif;
+    font-size: 40px;
+}
+
+.corona{
+    padding-top: 200px;
+
+
+}
+
+.bg-news{
+   height: 50vh;
+    background-repeat: no-repeat;
+    background-image: url(./image/Camelot\ 2.JPG);
+    background-color:rgba(255,255,255,0.8);
+    background-blend-mode:lighten;
+    background-size: cover;
+    background-position: center center;
+    /* 画像をタイル状に繰り返し表示しない */
+    background-repeat: no-repeat;
+    /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+    background-attachment: fixed;
+
+
+}
+
+.gap{
+    padding-top: 50px;
+}
+
+.bg-co{
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-image: url(./image/Ai\ Terada\ 2020\ Side\ .JPG);
+    background-color:rgba(255,255,255,0.8);
+    background-blend-mode:lighten;
+    background-size: cover;
+    background-position: center center;
+    /* 画像をタイル状に繰り返し表示しない */
+    background-repeat: no-repeat;
+    /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+    background-attachment: fixed;
+
+
+
+}
+
+.co-co{
+
+
+    padding-top: 20px;
+    padding-left:20px;
+    font-family: 'DIN Condensed', sans-serif;
+    font-size: 40px;
+
+}
+
+.co-gap{
+    padding-top: 50px;
+}
+
+.sns-co{
+    padding: 100px;
+    font-family: 'DIN Condensed', sans-serif;
+    font-size: 30px;
+}
+
+.twi{
+    height: 40px;
+}
+
+.insta{
+    height: 40px;
+}
+
+.mail{
+    height: 25px;
+    padding-top: 10px;
+    padding-left: 2px;
+
+}
+
+.footer-gap{
+    padding-top: 50px;
+}
+
+
+
+.bg-footer{
+background-color: black;
+padding-top: 50px;
+}
+
+.footer-logo{
+    height: 5vh;
+    padding-left: 600px;
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 1000px) { /* 画面幅が100pxより小さくなったら */
+
 }
