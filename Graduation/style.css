@@ -12,6 +12,14 @@
     position: relative;
 }
 
+@media screen and (max-width: 1000px) { /* 画面幅が100pxより小さくなったら */
+    .bg{
+
+       background-size: contain;
+
+    }
+    }
+
 @keyframes img-wrap-before {
     100% {
       transform: translateY(100%);
@@ -133,14 +141,12 @@ header {
 }
 */
 
-
 #profile{
     display: flex;
     margin-top: 100px;
     margin-left: 100px;
 
 }
-
 
 .name-logo{
     width: 280px;
@@ -149,9 +155,12 @@ header {
 
 @media screen and (max-width: 1000px) { /* 画面幅が100pxより小さくなったら */
     .name-logo{
-        width: 200px;
+        width: 150px;
+        padding-top: 20px;
     }
-}
+    }
+
+
 
 .profile{
     font-family: 'DIN Condensed', sans-serif;
@@ -161,22 +170,38 @@ header {
     padding-left: 100px;
 
 }
+
 .nine{
     font-family: 'DIN Condensed', sans-serif;
     padding-top: 80px;
     margin-right: 80px;
     font-family: 'DIN Condensed', sans-serif;
     font-size: 20px;
-
 }
+
+@media screen and (max-width: 1000px) { /* 画面幅が100pxより小さくなったら */
+    .nine{
+
+        display: inline;
+        font-size:15px;
+
+
+
+    }
+    }
+
 .profile-image{
     width: 400px;
     margin-right: 130px;
   }
-  @media screen and (max-width: 1000px) { /* 画面幅が100pxより小さくなったら */.profile-image{
-      height: 400px;
-      padding-top: 130px; }
+
+  @media screen and (max-width: 1000px) {
+      .profile-image
+    {padding-left: 50px;
+        height: 400px;
+
   }
+}
 
 
 
@@ -199,13 +224,8 @@ header {
     }
 
 
-    @media screen and (max-width: 1000px) { /* 画面幅が100pxより小さくなったら */
-        .flyer{
-            height: 250px;
-            padding-top: 40px;
-          }
 
-    }
+
 
 
 .flyer{
@@ -213,7 +233,14 @@ header {
     padding-left: 100px;
     padding-bottom: 20px;
 }
+@media screen and (max-width: 1000px) {
+.flyer{
+    width: 200px;
+    padding-top: 70px;
+    padding-left: 10px;
 
+}
+}
 
   .event-contents{
       padding-left: 20px;
@@ -225,13 +252,20 @@ header {
       display: flex;
       padding-top: 30px;
       padding-left: 30px;
-  }
+
+    }
 
     .APRIL{
         padding-left: 390px;
 
-
     }
+    @media screen and (max-width: 1000px) {
+        .APRIL{padding-left: 10px;
+
+        }
+    }
+
+
     .kaisai-april{
         padding-top: 140px;
         font-size: 30px;
@@ -287,9 +321,6 @@ header {
     background-repeat: no-repeat;
     /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
     background-attachment: fixed;
-
-
-
 }
 
 .co-co{
@@ -335,14 +366,23 @@ header {
 
 .bg-footer{
 background-color: black;
-padding-top: 50px;
+
 }
 
 .footer-logo{
-    height: 5vh;
-    padding-left: 600px;
-    padding-bottom: 20px;
-}
-@media screen and (max-width: 1000px) { /* 画面幅が100pxより小さくなったら */
+    height:40px;
+    padding-left: 45%;
+    
+
+
 
 }
+
+
+@media screen and (max-width: 1000px) {
+.sns-co{
+    font-size: 20px;
+
+}
+}
+
