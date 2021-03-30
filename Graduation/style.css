@@ -277,16 +277,6 @@ header {
     }
   }
 
-  @media screen and (max-width: 768px) { /* 画面幅が100pxより小さくなったら */
-    .list{
-
-
-    }
-}
-
-
-
-
 
 .flyer{
     width: 300px;
@@ -302,6 +292,11 @@ header {
 }
 }
 
+@media screen and (max-width: 812px) {
+    .flyer{
+        width: 100px;
+    }
+}
 
 
 
