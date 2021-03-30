@@ -12,13 +12,24 @@
     position: relative;
 }
 
+
 @media screen and (max-width: 1000px) { /* 画面幅が100pxより小さくなったら */
-    .bg{
-
-       background-size: contain;
-
+    .bg {
+        background-size: contain;
     }
+}
+
+@media screen and (max-width: 768px) { /* 画面幅が100pxより小さくなったら */
+    .bg {
+        height: 50vh;
     }
+}
+
+
+
+
+
+
 
 @keyframes img-wrap-before {
     100% {
@@ -69,11 +80,21 @@ header {
     /* background-repeat: no-repeat; */
 }
 
+@media only screen and (max-width: 480px){
+    .header{
+        font-size: 10px;
+    }
+}
+
 .header-left {
     /* display:  flex; */
     /* position:  relative; */
     animation: anime1 10s ease ;
 }
+
+
+
+
 
 .logo {
     height: 50px;
@@ -86,9 +107,6 @@ header {
     }
 }
 
-.header-right {
-    /* margin-left: 600px; */
-}
 
 @keyframes anime1 {
     0% {
@@ -117,6 +135,10 @@ header {
         font-size: 20px;
     }
 }
+
+
+
+
 
 /*
 46行目に書いてるから不要
@@ -147,6 +169,21 @@ header {
     margin-left: 100px;
 
 }
+
+@media screen and (max-width: 768px) { /* 画面幅が100pxより小さくなったら */
+    #profile{
+        margin-top: 1px;
+        margin-left: 10px;
+        font-size: 15px;
+
+    }
+    }
+
+
+
+
+
+
 
 .name-logo{
     width: 280px;
@@ -203,6 +240,16 @@ header {
   }
 }
 
+@media screen and (max-width: 768px) {
+    .profile-image
+  { height: 300px;
+    padding-top: 60px;
+
+
+
+}
+}
+
 
 
      #event {
@@ -223,6 +270,19 @@ header {
         background-size: cover;
     }
 
+    @media screen and (max-width: 768px) {
+        #event
+      {height: 100vh;
+
+    }
+  }
+
+  @media screen and (max-width: 768px) { /* 画面幅が100pxより小さくなったら */
+    .list{
+
+
+    }
+}
 
 
 
@@ -241,6 +301,10 @@ header {
 
 }
 }
+
+
+
+
 
   .event-contents{
       padding-left: 20px;
@@ -264,6 +328,9 @@ header {
 
         }
     }
+
+
+
 
 
     .kaisai-april{
@@ -305,6 +372,15 @@ header {
 
 }
 
+@media screen and (max-width: 768px) {
+    .bg-news{height: 100vh;
+
+    }
+}
+
+
+
+
 .gap{
     padding-top: 50px;
 }
@@ -322,6 +398,13 @@ header {
     /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
     background-attachment: fixed;
 }
+
+@media screen and (max-width: 768px) {
+    .bg-co{height: 100vh;
+
+    }
+}
+
 
 .co-co{
 
@@ -372,7 +455,7 @@ background-color: black;
 .footer-logo{
     height:40px;
     padding-left: 45%;
-    
+
 
 
 
