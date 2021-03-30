@@ -19,7 +19,7 @@
     }
 }
 
-@media screen and (max-width: 499px) { /* 画面幅が100pxより小さくなったら */
+@media screen and (max-width: 750px) { /* 画面幅が100pxより小さくなったら */
     .bg {
         height: 50vh;
     }
@@ -80,7 +80,7 @@ header {
     /* background-repeat: no-repeat; */
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 750px){
     .header{
         font-size: 10px;
     }
@@ -170,7 +170,7 @@ header {
 
 }
 
-@media screen and (max-width: 768px) { /* 画面幅が100pxより小さくなったら */
+@media screen and (max-width: 750px) { /* 画面幅が100pxより小さくなったら */
     #profile{
         margin-top: 1px;
         margin-left: 10px;
@@ -240,7 +240,7 @@ header {
   }
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 750px) {
     .profile-image
   { height: 300px;
     padding-top: 60px;
@@ -359,7 +359,7 @@ header {
 
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 750px) {
     .bg-news{height: 100vh;
 
     }
@@ -386,7 +386,7 @@ header {
     background-attachment: fixed;
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 750px) {
     .bg-co{height: 100vh;
 
     }
