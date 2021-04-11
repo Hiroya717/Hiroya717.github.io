@@ -12,24 +12,11 @@
     position: relative;
 }
 
-
-@media screen and (max-width: 1000px) { /* 画面幅が100pxより小さくなったら */
+@media screen and (max-width: 1000px) {
     .bg {
         background-size: contain;
     }
 }
-
-@media screen and (max-width: 750px) { /* 画面幅が100pxより小さくなったら */
-    .bg {
-        height: 50vh;
-    }
-}
-
-
-
-
-
-
 
 @keyframes img-wrap-before {
     100% {
@@ -66,35 +53,15 @@
         right: 0;
       }
 
-
-
 header {
     padding: 40px 40px;
     display: flex;
     justify-content: space-between;
-    /* position: relative; */
-    /* height: 100vh; */
-    /* background-image: url(./image/Camelot\ Buck\ .JPG); */
-    /* background-size: 100% auto; */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
-}
-
-@media only screen and (max-width: 750px){
-    .header{
-        font-size: 10px;
-    }
 }
 
 .header-left {
-    /* display:  flex; */
-    /* position:  relative; */
     animation: anime1 10s ease ;
 }
-
-
-
-
 
 .logo {
     height: 50px;
@@ -107,6 +74,11 @@ header {
     }
 }
 
+@media screen and (max-width: 375px) {
+    .logo {
+        height: 20px;
+    }
+}
 
 @keyframes anime1 {
     0% {
@@ -130,60 +102,19 @@ header {
     text-decoration: none;
     font-family: 'DIN Condensed', sans-serif;
 }
-@media screen and (max-width: 1000px) { /* 画面幅が100pxより小さくなったら */
+
+@media screen and (max-width: 1000px) {
     .nav>li>a {
         font-size: 20px;
     }
 }
 
-
-
-
-
-/*
-46行目に書いてるから不要
-@keyframes anime1 {
-    0% {
-        opacity: 0;
-        top: 50px;
-    }
-    100% {
-        opacity: 1;
-        top: 0;
-    }
-}
-*/
-
-/*
-36行目に移動
-@media screen and(min-width:576px) {
-    .logo {
-        size: 256px;
-    }
-}
-*/
-
-#profile{
+.profile{
     display: flex;
     margin-top: 100px;
     margin-left: 100px;
 
 }
-
-@media screen and (max-width: 750px) { /* 画面幅が100pxより小さくなったら */
-    #profile{
-        margin-top: 1px;
-        margin-left: 10px;
-        font-size: 15px;
-
-    }
-    }
-
-
-
-
-
-
 
 .name-logo{
     width: 280px;
@@ -197,15 +128,12 @@ header {
     }
     }
 
-
-
 .profile{
     font-family: 'DIN Condensed', sans-serif;
     font-size: 40px;
     border-bottom: 1px solid #cccccc;
     padding-bottom: 10px;
     padding-left: 100px;
-
 }
 
 .nine{
@@ -216,16 +144,12 @@ header {
     font-size: 20px;
 }
 
-@media screen and (max-width: 1000px) { /* 画面幅が100pxより小さくなったら */
+@media screen and (max-width: 1000px){
     .nine{
-
         display: inline;
         font-size:15px;
-
-
-
-    }
-    }
+        }
+        }
 
 .profile-image{
     width: 400px;
@@ -236,21 +160,15 @@ header {
       .profile-image
     {padding-left: 50px;
         height: 400px;
-
   }
 }
 
-@media screen and (max-width: 750px) {
-    .profile-image
-  { height: 300px;
-    padding-top: 60px;
-
-
-
-}
-}
-
-
+@media screen and (max-width: 375px) {
+    .profile-image {
+        padding-left: 0px;
+        height: 100%;
+    }
+    }
 
      #event {
         font-family: 'DIN Condensed', sans-serif;
@@ -277,33 +195,29 @@ header {
     }
   }
 
-
 .flyer{
     width: 300px;
     padding-left: 100px;
     padding-bottom: 20px;
 }
+
 @media screen and (max-width: 1000px) {
 .flyer{
     width: 200px;
-    padding-top: 70px;
+    padding-top: 50px;
     padding-left: 10px;
-
 }
 }
-
 
   .event-contents{
       padding-left: 20px;
       padding-top: 20px;
-
   }
 
   .list{
       display: flex;
       padding-top: 30px;
       padding-left: 30px;
-
     }
 
     .APRIL{
@@ -312,24 +226,18 @@ header {
     }
     @media screen and (max-width: 1000px) {
         .APRIL{padding-left: 10px;
-
         }
     }
-
-
-
-
 
     .kaisai-april{
         padding-top: 140px;
         font-size: 30px;
-
     }
 
 #news{
     display: flex;
-
 }
+
 .new-contents{
     padding-top: 20px;
     padding-left:20px;
@@ -339,8 +247,6 @@ header {
 
 .corona{
     padding-top: 200px;
-
-
 }
 
 .bg-news{
@@ -355,18 +261,7 @@ header {
     background-repeat: no-repeat;
     /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
     background-attachment: fixed;
-
-
 }
-
-@media screen and (max-width: 750px) {
-    .bg-news{height: 100vh;
-
-    }
-}
-
-
-
 
 .gap{
     padding-top: 50px;
@@ -386,21 +281,11 @@ header {
     background-attachment: fixed;
 }
 
-@media screen and (max-width: 750px) {
-    .bg-co{height: 100vh;
-
-    }
-}
-
-
 .co-co{
-
-
     padding-top: 20px;
     padding-left:20px;
     font-family: 'DIN Condensed', sans-serif;
     font-size: 40px;
-
 }
 
 .co-gap{
@@ -425,34 +310,24 @@ header {
     height: 25px;
     padding-top: 10px;
     padding-left: 2px;
-
 }
 
 .footer-gap{
     padding-top: 50px;
 }
 
-
-
 .bg-footer{
 background-color: black;
-
 }
 
 .footer-logo{
     height:40px;
     padding-left: 45%;
-
-
-
-
 }
-
 
 @media screen and (max-width: 1000px) {
 .sns-co{
     font-size: 20px;
-
 }
 }
 
