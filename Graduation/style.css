@@ -12,9 +12,9 @@
     position: relative;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width:375px) {
     .bg {
-        background-size: contain;
+        height: 50vh;
     }
 }
 
@@ -29,6 +29,7 @@
       transform: translateY(-100%);
     }
   }
+
       .bg:before,
       .bg:after {
         animation: 4s  cubic-bezier(.4, 0, .2, 1) forwards ;
@@ -53,11 +54,17 @@
         right: 0;
       }
 
-header {
-    padding: 40px 40px;
-    display: flex;
-    justify-content: space-between;
-}
+      header {
+        padding: 40px 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media screen and (max-width:375px) {
+        header {
+            padding: 10px;
+        }
+    }
 
 .header-left {
     animation: anime1 10s ease ;
@@ -65,18 +72,13 @@ header {
 
 .logo {
     height: 50px;
-    /* width: 250px; */
 }
 
-@media screen and (max-width: 1000px) { /* 画面幅が100pxより小さくなったら */
-    .logo {
+@media screen and (max-width:375px) {
+    .logo{
         height: 30px;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .logo {
-        height: 20px;
+        padding-top: 10px;
+        padding-left: 10px;
     }
 }
 
@@ -103,30 +105,38 @@ header {
     font-family: 'DIN Condensed', sans-serif;
 }
 
+@media screen and (max-width:375px) {
+    .nav {
+        display: none;
+    }
+}
+
 #profile{
     display: flex;
     margin-top: 100px;
     margin-left: 100px;
 }
 
-@media screen and (max-width: 375px) { /* 画面幅が100pxより小さくなったら */
-    #profile{
+@media screen and (max-width:375px) {
+    #profile {
         display: block;
-        margin: 0px;
+        margin-top: 50px;
+        margin-left: 0px;
     }
-    }
+}
 
 .name-logo{
     width: 280px;
-    padding-top: 60px;
+    padding-top: 20px;
 }
 
-@media screen and (max-width: 1000px) { /* 画面幅が100pxより小さくなったら */
-    .name-logo{
-        width: 150px;
+@media screen and (max-width:375px) {
+    .name-logo {
+        width: 200px;
         padding-top: 20px;
+        padding-left: 10px;
     }
-    }
+}
 
 .profile{
     font-family: 'DIN Condensed', sans-serif;
@@ -134,8 +144,14 @@ header {
     border-bottom: 1px solid #cccccc;
     padding-bottom: 10px;
     padding-left: 100px;
-
 }
+
+@media screen and (max-width:375px) {
+    .profile {
+        padding-left: 10px;
+    }
+}
+
 
 .nine{
     font-family: 'DIN Condensed', sans-serif;
@@ -145,29 +161,18 @@ header {
     font-size: 20px;
 }
 
-@media screen and (max-width: 1000px){
-    .nine{
-        display: inline;
-        font-size:15px;
-        }
-        }
+@media screen and (max-width:375px) {
+    .nine {
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-right: 10px;
+    }
+}
 
 .profile-image{
     width: 400px;
     margin-right: 130px;
   }
-
-  @media screen and (max-width: 1000px) {
-    .profile-image{
-      padding-left: 50px;
-}
-}
-
-@media screen and (max-width: 375px) {
-    .profile-image{
-        padding: 0px;
-}
-}
 
      #event {
         font-family: 'DIN Condensed', sans-serif;
@@ -187,11 +192,11 @@ header {
         background-size: cover;
     }
 
-    @media screen and (max-width: 1000px) {
-        #event{
+    @media screen and (max-width:375px) {
+        #event {
             height: 100vh;
         }
-
+    }
 
 .flyer{
     width: 300px;
@@ -199,21 +204,13 @@ header {
     padding-bottom: 20px;
 }
 
-@media screen and (max-width: 1000px) {
-.flyer{
-    width: 200px;
-    padding-top: 50px;
-    padding-left: 10px;
-}
-}
-
-@media screen and (max-width: 375px) {
-    .flyer{
-        width: 200px;
-    padding-top: 50px;
-    padding-left: 50px;
+@media screen and (max-width:375px) {
+    .flyer {
+        width:200px;
+        padding-left: 0px;
+        padding-top: 50px;
     }
-    }
+}
 
   .event-contents{
       padding-left: 20px;
@@ -223,39 +220,39 @@ header {
   .list{
       display: flex;
       padding-top: 30px;
-      padding-left: 30px;
+      padding-left: 90px;
     }
 
-    @media screen and (max-width: 375px) {
-        .list{
+    @media screen and (max-width:375px) {
+        .list {
             display: block;
         }
-        }
+    }
 
     .APRIL{
         padding-left: 390px;
     }
 
-    @media screen and (max-width: 375px) {
-        .APRIL{
+    @media screen and (max-width:375px) {
+        .APRIL {
             padding-left: 0px;
-            padding-top: 70px;
+            padding-top: 50px;
         }
-        }
+    }
 
     .kaisai-april{
         padding-top: 140px;
         font-size: 30px;
     }
 
-    @media screen and (max-width: 375px) {
-        .kaisai-april{
-            padding-left: 100px;
-        }
-        }
-
 #news{
     display: flex;
+}
+
+@media screen and (max-width:375px) {
+    #news{
+        display: block;
+    }
 }
 
 .new-contents{
@@ -264,15 +261,14 @@ header {
     font-family: 'DIN Condensed', sans-serif;
     font-size: 40px;
 }
-
-@media screen and (max-width: 375px) {
-    .new-contents{
-        padding-left: 10px;
-    }
-    }
-
 .corona{
     padding-top: 200px;
+}
+
+@media screen and (max-width:375px) {
+    .corona{
+        display: block;
+        padding-left: 10px;
 }
 
 .bg-news{
@@ -289,11 +285,11 @@ header {
     background-attachment: fixed;
 }
 
-@media screen and (max-width: 375px) {
-    .bg-news{
-        background-size: 100vh;
+@media screen and (max-width:375px) {
+    .bg-news {
+        height: 100vh ;
     }
-    }
+}
 
 .gap{
     padding-top: 50px;
@@ -313,10 +309,11 @@ header {
     background-attachment: fixed;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width:375px) {
     .bg-co{
         height: 100vh;
     }
+}
 
 .co-co{
     padding-top: 20px;
@@ -335,11 +332,12 @@ header {
     font-size: 30px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width:375px) {
     .sns-co{
-        padding-top: 300px;
+        padding-top: 200px;
     }
 }
+
 
 .twi{
     height: 40px;
@@ -355,7 +353,6 @@ header {
     padding-left: 2px;
 }
 
-
 .footer-gap{
     padding-top: 50px;
 }
@@ -369,3 +366,8 @@ background-color: black;
     padding-left: 45%;
 }
 
+@media screen and (max-width:375px) {
+    .footer-logo{
+       padding-left: 100px;
+    }
+}
