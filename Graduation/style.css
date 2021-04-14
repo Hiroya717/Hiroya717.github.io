@@ -200,7 +200,6 @@
     @media screen and (max-width:375px) {
         #event {
             height: 100vh;
-            background-blend-mode: unset;
     }
 }
 
@@ -259,7 +258,6 @@
 @media screen and (max-width:375px) {
     #news {
         display: block;
-
 }}
 
 .new-contents{
@@ -297,7 +295,7 @@
 @media screen and (max-width:375px) {
     .bg-news {
         height: 100vh;
-}
+}}
 
 .gap{
     padding-top: 50px;
