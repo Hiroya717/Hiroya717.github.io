@@ -201,7 +201,6 @@
         #event {
             height: 100vh;
             background-attachment: fixed;
-            background-size: cover;
     }
 }
 
@@ -297,6 +296,7 @@
 @media screen and (max-width:375px) {
     .bg-news {
         height: 100vh;
+        background-attachment: fixed;
 }}
 
 .gap{
@@ -320,6 +320,7 @@
 @media screen and (max-width:375px) {
     .bg-co {
         height: 100vh;
+        background-attachment: fixed;
 }
 }
 
