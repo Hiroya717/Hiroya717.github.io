@@ -297,6 +297,7 @@
     .bg-news {
         height: 100vh;
         background-attachment:scroll;
+
 }}
 
 .gap{
@@ -319,8 +320,9 @@
 
 @media screen and (max-width:375px) {
     .bg-co {
-        height: 100vh;
+        height: 50vh;
         background-attachment:fixed;
+
 }
 }
 
