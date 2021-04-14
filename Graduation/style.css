@@ -71,6 +71,12 @@
     animation: anime1 10s ease ;
 }
 
+.header-right {
+    animation: anime1 10s ease ;
+}
+
+
+
 .logo {
     height: 50px;
 }
@@ -102,9 +108,10 @@
     .nav {
         display: block;
         padding-top: 220px;
-        padding-right: 100px;
+        padding-right: 10px;
 
-}}
+    }}
+
 
 .nav>li>a {
     color: white;
@@ -113,6 +120,11 @@
     text-decoration: none;
     font-family: 'DIN Condensed', sans-serif;
 }
+
+
+
+
+
 
 #profile{
     display: flex;
