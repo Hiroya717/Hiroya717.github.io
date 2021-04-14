@@ -320,7 +320,7 @@
 @media screen and (max-width:375px) {
     .bg-co {
         height: 100vh;
-        background-attachment:scroll;
+        background-attachment:fixed;
 }
 }
 
