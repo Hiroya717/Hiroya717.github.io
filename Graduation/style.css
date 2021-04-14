@@ -200,12 +200,7 @@
     @media screen and (max-width:375px) {
         #event {
             height: 100vh;
-            background-color: none;
-            background-blend-mode: none;
-            background-position: none;
-            background-repeat: repeat;
-            background-attachment: scroll;
-            background-size: none;
+            background-blend-mode: unset;
     }
 }
 
