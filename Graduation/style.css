@@ -152,7 +152,6 @@
     }
 }
 
-
 .nine{
     font-family: 'DIN Condensed', sans-serif;
     padding-top: 80px;
@@ -173,6 +172,12 @@
     width: 400px;
     margin-right: 130px;
   }
+
+  @media screen and (max-width:375px) {
+    .profile-image {
+        width: 100%;
+    }
+}
 
      #event {
         font-family: 'DIN Condensed', sans-serif;
@@ -251,10 +256,10 @@
 }
 
 @media screen and (max-width:375px) {
-    #news{
+    #news {
         display: block;
-    }
-}
+
+}}
 
 .new-contents{
     padding-top: 20px;
@@ -267,9 +272,11 @@
 }
 
 @media screen and (max-width:375px) {
-    .corona{
+    .corona {
         display: block;
+        padding-right: 10px;
         padding-left: 10px;
+    }
 }
 
 .bg-news{
@@ -288,7 +295,7 @@
 
 @media screen and (max-width:375px) {
     .bg-news {
-        height: 100vh ;
+        height: 100vh;
     }
 }
 
@@ -311,19 +318,10 @@
 }
 
 @media screen and (max-width:375px) {
-    .bg-co{
+    .bg-co {
         height: 100vh;
-        background-color:rgba(255,255,255,0.8);
-    background-blend-mode:lighten;
-    background-size: cover;
-    background-position: center center;
-    /* 画像をタイル状に繰り返し表示しない */
-    background-repeat: no-repeat;
-    /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
-    background-attachment: fixed;
 }
-    }
-
+}
 
 .co-co{
     padding-top: 20px;
@@ -341,13 +339,6 @@
     font-family: 'DIN Condensed', sans-serif;
     font-size: 30px;
 }
-
-@media screen and (max-width:375px) {
-    .sns-co{
-        padding-top: 200px;
-    }
-}
-
 
 .twi{
     height: 40px;
@@ -374,10 +365,4 @@ background-color: black;
 .footer-logo{
     height:40px;
     padding-left: 45%;
-}
-
-@media screen and (max-width:375px) {
-    .footer-logo{
-       padding-left: 100px;
-    }
 }
