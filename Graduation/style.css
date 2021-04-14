@@ -371,3 +371,7 @@ background-color: black;
     padding-left: 45%;
 }
 
+@media screen and (max-width:375px) {
+    .footer-logo {
+        padding-left: 25%;
+}}
