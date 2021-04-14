@@ -201,6 +201,7 @@
         #event {
             height: 100vh;
             background-attachment: fixed;
+            background-size: cover;
     }
 }
 
