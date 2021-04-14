@@ -200,7 +200,7 @@
     @media screen and (max-width:375px) {
         #event {
             height: 100vh;
-            background-attachment: scroll;
+            background-attachment: fixed;
     }
 }
 
