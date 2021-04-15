@@ -71,11 +71,10 @@
     animation: anime1 10s ease ;
 }
 
+
 .header-right {
     animation: anime1 10s ease ;
 }
-
-
 
 .logo {
     height: 50px;
@@ -84,9 +83,8 @@
 @media screen and (max-width:375px) {
     .logo{
         height: 30px;
-        padding-top: 10px;
-        padding-left: 10px;
-    }
+        position: absolute;
+        padding-left: 200px;
 }
 
 @keyframes anime1 {
@@ -108,10 +106,7 @@
     .nav {
         display: block;
         padding-top: 220px;
-        padding-right: 10px;
-
     }}
-
 
 .nav>li>a {
     color: white;
@@ -120,11 +115,6 @@
     text-decoration: none;
     font-family: 'DIN Condensed', sans-serif;
 }
-
-
-
-
-
 
 #profile{
     display: flex;
@@ -355,6 +345,11 @@
     font-family: 'DIN Condensed', sans-serif;
     font-size: 30px;
 }
+
+@media screen and (max-width:375px) {
+    .sns-co {
+        padding-top: 250px;
+    }}
 
 .twi{
     height: 40px;
