@@ -85,7 +85,7 @@
         height: 30px;
         position: absolute;
         padding-left: 200px;
-}
+}}
 
 @keyframes anime1 {
     0% {
@@ -114,7 +114,11 @@
     margin-left: 90px;
     text-decoration: none;
     font-family: 'DIN Condensed', sans-serif;
-}
+        transition: 1s;
+        }
+.nav>li>a:hover {
+        color: yellow;
+        }
 
 #profile{
     display: flex;
