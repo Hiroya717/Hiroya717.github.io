@@ -10,7 +10,7 @@
 @media screen and (max-width:375px) {
   .navbar {
       height: 100vh;
-      width: 100vh;
+      width: 100%;
   }
 }
 
@@ -25,9 +25,8 @@
 @media screen and (max-width:375px) {
   .right {
     font-size: 40px;
-    padding-left: 0px;
     height: 50px;
-
+    padding-left: 20px;
   }
 }
 .logo{
@@ -62,7 +61,6 @@
   color: orange;
 }
 
-<<<<<<< HEAD
 @media screen and (max-width:375px) {
   .left>li>a{
     display: none;
@@ -94,7 +92,7 @@
   padding-top: 100px;
 }
 
-<<<<<<< HEAD
+
 @media screen and (max-width:375px) {
   .main-view {
    display: none;
@@ -111,6 +109,7 @@
   #music{
     padding-left: 10px;
     display: block;
+
   }
 }
 
@@ -126,12 +125,11 @@
 
 @media screen and (max-width:375px) {
   .youtube {
-    width: 500px;
-    padding-left: 80px;
-    padding-top: 50px;
+    width: 100%;
+    padding-right: 10px;
+    padding-top: 20px;
+    height: 250px;
   }
-
-  padding-left: 0px;
 
 }
 
@@ -141,17 +139,23 @@
   padding-right: 100px;
 }
 
-
 @media screen and (max-width:375px) {
   .release {
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 10px;
-    padding-right: 10px;
-    width: 600px;
+    padding-right: 20px;
+    font-size: 15px;
   }
 }
+
 .gap2{
   padding-top: 100px;
+}
+
+@media screen and (max-width:375px) {
+  .gap2 {
+    padding-top: 10px;
+  }
 }
 
 #photos{
@@ -166,7 +170,8 @@
 @media screen and (max-width:375px) {
   #photos {
     display: block;
-    width: 100vh;
+    width: 100%;
+    padding-left: 10px;
   }
 }
 
@@ -183,12 +188,29 @@ padding-top: 20px;
   height: 250px;
 }
 
+@media screen and (max-width:375px) {
+  .photos-co {
+    width: 160px;
+    height: 130px;
+    opacity: 0.7;
+    padding-top: 10px;
+  }
+}
+
 .photos-co2{
   width: 250px;
   height: 250px;
   padding-top: 80px;
   opacity: 0.7;
-  padding-left: 30px;
+}
+
+@media screen and (max-width:375px) {
+  .photos-co2 {
+    padding-top: 10px;
+    width: 160px;
+    height: 130px;
+    opacity: 0.7;
+  }
 }
 
 .photos-co3{
@@ -199,12 +221,32 @@ padding-top: 20px;
   padding-left: 30px;
 }
 
+@media screen and (max-width:375px) {
+  .photos-co3 {
+    padding-top: 10px;
+    width: 160px;
+    height: 130px;
+    opacity: 0.7;
+    padding-left: 0px;
+  }
+}
+
 .photos-co4{
   width: 250px;
   height: 250px;
   padding-top: 80px;
   opacity: 0.7;
   padding-left: 30px;
+}
+
+@media screen and (max-width:375px) {
+  .photos-co4 {
+    padding-top: 10px;
+    width: 160px;
+    height: 130px;
+    opacity: 0.7;
+    padding-left: 0px;
+  }
 }
 
 #items{
@@ -214,6 +256,13 @@ padding-top: 20px;
   flex-direction: row;
 }
 
+@media screen and (max-width:375px) {
+  #items {
+    display: block;
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+}
 
 .product-co{
   font-size: 40px;
@@ -232,6 +281,15 @@ padding-top: 20px;
     padding-left: 50px;
   }
 
+  @media screen and (max-width:375px) {
+    .wear{
+      padding-top: 50px;
+      padding-right: 10px;
+      padding-left: 0px;
+      width: 100%;
+    }
+  }
+
 .gap{
   padding-top: 100px;
 }
@@ -241,9 +299,15 @@ padding-top: 20px;
   padding-left: 100px;
   display: flex;
   background-color:peru;
-
 }
 
+@media screen and (max-width:375px) {
+  #profile {
+    display: block;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+}
   .contact-co{
     font-size: 40px;
     font-weight: 200;
@@ -256,15 +320,31 @@ padding-top: 20px;
     padding-bottom: 50px;
   }
 
+  @media screen and (max-width:375px) {
+    .profile {
+      padding-top: 20px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 20px;
+    }
+  }
+
 .hi{
   padding-top: 60px;
   padding-left: 100px;
 }
 
+@media screen and (max-width:375px) {
+  .hi {
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 .foot{
   background-color: green;
   height: 50px;
-
 }
 
 .copy{
@@ -272,30 +352,22 @@ padding-top: 20px;
   padding-top: 10px;
 }
 
+
+@media screen and (max-width:375px) {
+  .copy {
+    padding-left: 100px;
+  }
+}
+
 .twitter{
   padding-top: 150px;
   padding-left: 40px;
 }
-<<<<<<< HEAD
-=======
 
 
-.main-contents {
-  animation: fadeup 6s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+@media screen and (max-width:375px) {
+  .twitter {
+    padding-top: 0px;
+    padding-left: 10px;
+  }
 }
-
-@keyframes fadeup {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-
->>>>>>> e7b4fc65d1e5676b1a7303785de3dc8444829390
